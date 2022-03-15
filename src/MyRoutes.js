@@ -22,12 +22,6 @@ import CommentsList from './Components/Comments/CommentsNew/CommentsList';
 import CommentsAdd from './Components/Comments/CommentsNew/CommentsAdd';
 import AdminCreate from './Components/Admin/AdminCreate/AdminCreate';
 import ContactUs from './Components/Home/ContactUs/ContactUs';
-// import RealChat from './Components/RealChat/RealChat';
-
-
-
-
-
 
 
 const MyRoutes = () => {
@@ -56,7 +50,7 @@ const MyRoutes = () => {
                         <Route path='/123' element={<CommentsAdd/>} />
                         <Route path='/contact' element={<ContactUs/>} />
                         <Route path='/admin' element={<AdminCreate/>} />
-                        {/* <Route path='/chat' element={<RealChat/>} /> */}
+                        {/* <Route path='/chat' element={<RealChat/>} /> */} 
 
                     </Routes>
                 </BrowserRouter>
