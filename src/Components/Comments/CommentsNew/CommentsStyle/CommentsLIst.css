@@ -1,0 +1,139 @@
+.row{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+  
+  a {
+    color: #f96332;
+  }
+  .m-t-5 {
+    margin-top: 5px;
+  }
+  .card {
+    background: #fff;
+    margin-bottom: 30px;
+    transition: 0.5s;
+    border: 0;
+    border-radius: 0.1875rem;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    box-shadow: none;
+  }
+  .card .body {
+    font-size: 14px;
+    color: #424242;
+    padding: 20px;
+    font-weight: 400;
+  }
+  .profile-page .profile-header {
+    position: relative;
+  }
+  
+  .profile-page .profile-header .profile-image img {
+    border-radius: 50%;
+    width: 140px;
+    border: 3px solid #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  
+  .profile-page .profile-header .social-icon a {
+    margin: 0 5px;
+  }
+  
+  .profile-page .profile-sub-header {
+    min-height: 60px;
+    width: 100%;
+  }
+  
+  .profile-page .profile-sub-header ul.box-list {
+    display: inline-table;
+    table-layout: fixed;
+    width: 100%;
+    background: #eee;
+  }
+  
+  .profile-page .profile-sub-header ul.box-list li {
+    border-right: 1px solid #e0e0e0;
+    display: table-cell;
+    list-style: none;
+  }
+  
+  .profile-page .profile-sub-header ul.box-list li:last-child {
+    border-right: none;
+  }
+  
+  .profile-page .profile-sub-header ul.box-list li a {
+    display: block;
+    padding: 15px 0;
+    color: #424242;
+  }
+
+
+  .buttonShow{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 7px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .buttonEdit{
+    background-color: #292929; /* Green */
+    border: none;
+    color: white;
+    padding: 7px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+
+  .comments-container-form{
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 6px 5px rgb(0 0 0 / 32%);
+    padding: 20px;
+    width: 500px;
+  }
+
+
+  .comment-form-title{
+    font-size: 26px;
+  }
+
+
+  .form-text{
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+  }
+
+  .form-text-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+@media all and (max-width: 550px) {
+  .comments-container-form {
+      width: 350px;
+  }
+} 
+
+@media all and (max-width: 400px) {
+  .comments-container-form {
+      width: 280px;
+  }
+} 
+
+  
+
+  @media all and (max-width: 400px) {
+    .text-comments {
+        font-size: 20px;
+    }
+} 

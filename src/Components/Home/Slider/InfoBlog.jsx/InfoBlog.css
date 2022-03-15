@@ -1,0 +1,216 @@
+a {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+  }
+  a:hover {
+    text-decoration: none;
+    color: rgb(73, 71, 71);
+    transform: scale(1.02);
+  }
+  div > a {
+    margin-right: 2vw;
+    font-weight: bold;
+  }
+  
+  .Vid {
+    cursor: pointer;
+    transition: 0.6s;
+    border-radius: 20px;
+  }
+  .Vid:hover {
+    transform: scale(0.9);
+  }
+  .underLine {
+    transition: 10s;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+  }
+  .underLine1 {
+    color: rgb(112, 108, 108);
+    transition: 10s;
+    display: inline-block;
+    position: relative;
+  }
+  .underLine:after,
+  .underLine1:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #646464;
+    transform-origin: bottom right;
+    transition: transform 0.75s ease-in-out;
+  }
+  .underLine:hover:after {
+    transform: scaleX(1);
+    /* transform-origin: bottom left; */
+  }
+  .underLine1:hover:after {
+    transform: scaleX(0.9);
+    transform-origin: bottom left;
+  }
+  .underLine2 {
+    color: rgb(112, 108, 108);
+    transition: 10s;
+    display: inline-block;
+    position: relative;
+  }
+  .underLine2:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #d83838;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-in-out;
+  }
+  .underLine2:hover:after {
+    transform: scaleX(0.9);
+    transform-origin: bottom left;
+  }
+  .vl {
+    margin-top: 2vh;
+    border-left: 1px solid #d3cfcf;
+    position: absolute;
+    margin-left: 50vw;
+    height: 250px;
+  }
+  .vlt {
+    margin-left: 51vw;
+    margin-top: 25vh;
+  }
+  .CardsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
+  }
+  
+  .Intermediate_Area {
+    background-color: #fafafa;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10%;
+    margin-bottom: 20vh;
+  }
+  .Intermediate_Area_Part2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .Intermediate_Area_Part1 {
+    font-size: 3rem;
+    font-weight: lighter;
+    opacity: 0.8;
+    font-family: "Anton", sans-serif;
+  }
+  
+  .Footer_1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 8%;
+  }
+  .Footer_1_1 {
+    font-size: 2.2rem;
+    font-weight: lighter;
+    opacity: 0.7;
+    font-family: "Anton", sans-serif;
+  }
+  
+  .Footer_2 {
+    /* background-color: #fafafa; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5% 10% 0% 10%;
+    /* margin-bottom: 20vh; */
+    /* color: ; */
+  }
+  li {
+    list-style-type: none;
+    margin-right: 2vw;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  ul li {
+    margin-bottom: 1vh;
+    text-align: center;
+  }
+  .Footer_3 {
+    padding: 0% 8% 5% 8%;
+  }
+  
+  @media only screen and (max-width: 1500px) {
+  
+    .AboveFooter_Vid{
+      margin-left: 0vw;
+      margin-right: 10vw;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .Top_Area_Responsive {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .Top_Area_Text_Left_Responsive {
+      justify-content: center;
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 5vh;
+      margin-left: 25vw;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+
+    .Footer_1_Names {
+      flex-direction: column;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .hide_on_responsive {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .Responsive_Head {
+      position: relative;
+      /* margin: 0; */
+      /* left: -36px; */
+      /* font-size: 15px; */
+    }
+    .Top_Area_Text_Left_Responsive{
+        margin-left: 16vw;
+    }
+
+  }
+  @media only screen and (width: 400px) {
+    .text-b{
+        font-size: 15px;
+    }
+
+  }
+
+  .link-a{
+      text-decoration: none;
+  }
+  

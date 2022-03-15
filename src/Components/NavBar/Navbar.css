@@ -1,0 +1,22 @@
+.navbar{
+    padding: 10px 200px;
+}
+
+
+@media all and (max-width: 1200px) {
+    .navbar {
+      padding: 10px 100px;
+    }
+  }
+
+  @media all and (max-width: 800px) {
+    .navbar {
+      padding: 10px 80px;
+    }
+  }
+
+  @media all and (max-width: 500px) {
+    .navbar {
+      padding: 10px 10px;
+    }
+  }

@@ -1,0 +1,127 @@
+.contact-conainer{
+    display: flex;
+    flex-direction: column;
+}
+.content-h1{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.Contact-Form{
+    display: flex;
+    flex-direction: column;
+	 width:100%;
+	 margin:0 auto;
+	 text-align:center;
+	 margin-top:50px;
+ }
+ .Contact-Form h2{
+	 color:#ffffff;
+	 text-transform:capitalize;
+	 margin-bottom:20px;
+	 font-size:30px;
+ }
+ .Contact-Form p{
+	 color:#9999B9;
+	 margin-bottom:50px;
+ }
+ .input-fields{
+     display: flex;
+     flex-direction: column;
+	 float:left;
+	 overflow:hidden;
+	 /* margin-right:30px; */
+	 margin-top: 50px;
+ }
+ .input-fields input{
+	  width:300px;
+	  padding:15px 20px;
+	  margin-bottom:20px;
+	  border: solid 1px;;
+	  border-radius:3px ;
+  }
+ .msg{
+	 overflow:hidden;
+	 margin-top: 70px;
+ }
+ .msg textarea{
+	 width:300px;
+	  padding:10px 20px;
+	  margin-bottom:20px;
+	  height:160px;
+	  border:1;
+	  border-radius:3px ;
+	  resize:none;
+ }
+ .Contact-Form button{
+	 padding:10px 15px;
+	 color:#ffffff;
+	 text-transform:uppercase;
+	 border:1px solid green;
+	 background:blue;
+	 cursor:pointer;
+	 border-radius:3px;
+	 margin-right: 40px;
+     margin-top: 15px;
+ }
+  .Contact-Form button:hover{
+	border:1px solid rgb(62, 62, 255);
+	background:none;
+  }
+ .details{
+	 width: 300px;
+	 /* height:150px; */
+	 color: black;
+	 background:white;
+	 padding:10px;
+	 float:left;
+	 overflow:hidden;
+	 border-radius:3px;
+
+ }
+ .details:last-child{
+	margin-right:0;
+ }
+ .details h3{
+ 	padding-top: 60px;
+	 font-size:25px;
+	 color:black;
+	 font-style:normal;
+	 margin-left:10px;
+	 margin-bottom:20px;
+	 text-transform:uppercase;
+	 text-align:left;
+	 
+ }
+ .details p{
+	font-size:13px;
+	font-family: Arial;
+	 color:black;
+	 font-style:normal;
+	 margin:0;
+	 padding:0;
+	 text-align:left;
+	 /* text-transform:capitalize; */
+	 margin-left:10px;
+	 margin-bottom:2px;
+ }
+
+ .container-details{
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+ }
+ 
+ .container-msg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
+
+ .container-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+ }
