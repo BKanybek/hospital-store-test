@@ -155,62 +155,64 @@ export default function NavBar() {
   
   return (
     <div>
-              <Navbar className='navbar' expand="lg">
-  <Container fluid>
-    <div><img style={{width: '50px', height: '50px'}} src={Logo} alt="" /></div>
-    <Navbar.Toggle aria-controls="navbarScroll" />
-    <Navbar.Collapse id="navbarScroll">
+    <Navbar className='navbar' expand="lg">
+      <Container fluid>
+      <div><img style={{width: '50px', height: '50px'}} src={Logo} alt="" /></div>
+      <Navbar.Toggle aria-controls="navbarScroll" />
+      <Navbar.Collapse id="navbarScroll">
       <Nav style={{ paddingLeft: '10px'}}
-        className="me-auto my-2 my-lg-0"
-        navbarScroll
+      className="me-auto my-2 my-lg-0"
+      navbarScroll
       >
-        <Nav.Link style={{fontWeight: '800', color: 'black'}} href="/">Home</Nav.Link>
-        <Nav.Link style={{fontWeight: '800', color: 'black'}}  href="/list2">Equipment</Nav.Link>
-        <Nav.Link style={{fontWeight: '800', color: 'black'}}  href="/list">Specialists</Nav.Link>
-        <NavDropdown style={{fontWeight: '800', color: 'black'}}  title="More" id="navbarScrollingDropdown">
-          <NavDropdown.Item href="/comment">Reviews</NavDropdown.Item>
-          <NavDropdown.Item href="/contact">Contacts</NavDropdown.Item>
-          <NavDropdown.Divider />
-          <NavDropdown.Item href="#action5">
-           About us
-          </NavDropdown.Item>
-        </NavDropdown>
+      <Link style={{display: 'flex', alignItems: 'center',textDecoration: 'none', fontWeight: '800', color: 'black'}} to="/">Home</Link>
+      <Link style={{display: 'flex', alignItems: 'center',textDecoration: 'none', fontWeight: '800', color: 'black'}} to="/list2">Equipment</Link>
+      <Link style={{display: 'flex', alignItems: 'center',textDecoration: 'none', fontWeight: '800', color: 'black'}}  to="/list">Specialists</Link>
+      <NavDropdown title="More" id="navbarScrollingDropdown">
+      <div style={{display: 'flex', flexDirection: 'column'}}>
+        <Link style={{textDecoration: 'none', fontWeight: '400', color: 'black', padding: '0.25rem 1rem'}}  to="/comment">Reviews</Link>
+        <Link style={{textDecoration: 'none', fontWeight: '400', color: 'black', padding: '0.25rem 1rem'}}  to="/contact">Contacts</Link>
+      </div>
+      <NavDropdown.Divider />
+      <NavDropdown.Item href="#a">
+      About us
+      </NavDropdown.Item>
+      </NavDropdown>
       </Nav>
       <Box sx={{ flexGrow: 1 }} /> 
-     
-                    <Box sx={{ display: { md: 'd-flex' } }}>
-                      <Link to='/cart'>
-                            <IconButton>
-                                <Badge badgeContent={cartLength} color='secondary' sx={{paddingTop: '10'}}>
-                                    <ShoppingCartIcon sx={{color: 'black', marginTop: '5px'}}/>
-                                </Badge>
-                            </IconButton>
-                      </Link>
-                      <Link to='/favorite' style={{color: 'white'}}>
-                        <IconButton>
-                           <Badge badgeContent={starLength} color='secondary'>
-                              <FavoriteIcon sx={{color: 'black'}}/>
-                           </Badge>
-                        </IconButton>
-                      </Link>
-                        <IconButton
-                          size="large"
-                          edge="end"
-                          aria-label="account of current user"
-                          aria-controls={menuId}
-                          aria-haspopup="true"
-                          onClick={handleProfileMenuOpen}
-                          color="inherit"
-                        >
-                          <AccountCircle sx={{marginTop:'3px'}} />
-                        </IconButton>
-                      </Box>
-                      {renderMobileMenu}
-                      {renderMenu}   
-    </Navbar.Collapse>
-  </Container>
+
+          <Box sx={{ display: { md: 'd-flex' } }}>
+            <Link to='/cart'>
+                  <IconButton>
+                      <Badge badgeContent={cartLength} color='secondary' sx={{paddingTop: '10'}}>
+                          <ShoppingCartIcon sx={{color: 'black', marginTop: '5px'}}/>
+                      </Badge>
+                  </IconButton>
+            </Link>
+            <Link to='/favorite' style={{color: 'white'}}>
+              <IconButton>
+                 <Badge badgeContent={starLength} color='secondary'>
+                    <FavoriteIcon sx={{color: 'black'}}/>
+                 </Badge>
+              </IconButton>
+            </Link>
+              <IconButton
+                size="large"
+                edge="end"
+                aria-label="account of current user"
+                aria-controls={menuId}
+                aria-haspopup="true"
+                onClick={handleProfileMenuOpen}
+                color="inherit"
+              >
+                <AccountCircle sx={{marginTop:'3px'}} />
+              </IconButton>
+            </Box>
+            {renderMobileMenu}
+            {renderMenu}   
+</Navbar.Collapse>
+</Container>
 </Navbar>
-    </div>
+</div>
   );
 }
 
