@@ -17,6 +17,7 @@
     "antd": "^4.18.9",
     "axios": "^0.26.0",
     "bootstrap": "^5.1.3",
+    "build": "^0.1.4",
     "firebase": "^9.6.7",
     "formik": "^2.2.9",
     "ionicons": "^6.0.1",
